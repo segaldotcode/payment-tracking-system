@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ChevronLeft } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "@/components/language-toggle";
 import { StatusBadge } from "@/components/payments/status-badge";
 import { PaymentTimeline } from "@/components/payments/payment-timeline";
 import { ReceiptPanel } from "@/components/payments/receipt-panel";
 import { PaymentActions } from "@/components/payments/payment-actions";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getPaymentById, getReceiptByPaymentId, listPaymentEvents } from "@/lib/payments/queries";
 import { formatCurrency } from "@/lib/utils";
@@ -35,13 +37,15 @@ export default async function PaymentDetail({ params, searchParams }: PaymentDet
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-6 py-12">
       <header className="flex items-start justify-between gap-4">
-        <Link
-          href={`/?lang=${locale}`}
-          className="text-sm text-muted-foreground underline-offset-4 hover:underline"
+        <Button
+          variant="ghost"
+          size="sm"
           data-cuelume-hover
+          render={<Link href={`/?lang=${locale}`} />}
         >
+          <ChevronLeft />
           {dict.detail.back}
-        </Link>
+        </Button>
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <LanguageToggle locale={locale} />

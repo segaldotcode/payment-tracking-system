@@ -23,6 +23,7 @@
     "amount": "Montant",
     "user": "Utilisateur",
     "created": "Créé le",
+    "action": "Action",
     "viewDetails": "Voir les détails"
   },
   "filters": {

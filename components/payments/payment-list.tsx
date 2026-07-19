@@ -31,7 +31,7 @@ export function PaymentList({ payments, dict, locale }: PaymentListProps) {
           <TableHead>{dict.list.amount}</TableHead>
           <TableHead>{dict.list.user}</TableHead>
           <TableHead>{dict.list.created}</TableHead>
-          <TableHead className="text-right">{dict.list.viewDetails}</TableHead>
+          <TableHead className="text-right">{dict.list.action}</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>

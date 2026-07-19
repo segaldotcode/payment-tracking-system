@@ -23,6 +23,7 @@
     "amount": "Amount",
     "user": "User",
     "created": "Created",
+    "action": "Action",
     "viewDetails": "View details"
   },
   "filters": {
