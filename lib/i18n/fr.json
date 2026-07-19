@@ -34,7 +34,6 @@
     "timelineHeading": "Chronologie",
     "receiptHeading": "Reçu",
     "receiptEmpty": "Aucun reçu lié pour l'instant.",
-    "receiptReferenceLabel": "Référence",
     "linkReceipt": "Lier un reçu",
     "issuedOn": "Émis le {date}"
   },

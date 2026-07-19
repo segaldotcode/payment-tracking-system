@@ -34,7 +34,6 @@
     "timelineHeading": "Timeline",
     "receiptHeading": "Receipt",
     "receiptEmpty": "No receipt linked yet.",
-    "receiptReferenceLabel": "Reference",
     "linkReceipt": "Link receipt",
     "issuedOn": "Issued {date}"
   },
