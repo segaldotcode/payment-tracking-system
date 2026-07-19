@@ -33,7 +33,17 @@ CREATED -> PROCESSING -> SUCCESS
 
 ## Screenshots / Demo GIF
 
-Coming soon.
+Light mode:
+
+![Payment list in light mode](public/assets/screen-light-mode.png)
+
+Dark mode:
+
+![Payment list in dark mode](public/assets/screen-dark-mode.png)
+
+Creating a payment, advancing it through its lifecycle, linking a receipt and refunding it:
+
+![Demo of the full payment lifecycle](public/assets/demo.gif)
 
 ## How to reuse
 
