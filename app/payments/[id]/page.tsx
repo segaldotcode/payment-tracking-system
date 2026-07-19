@@ -39,7 +39,7 @@ export default async function PaymentDetail({ params, searchParams }: PaymentDet
       <header className="flex items-start justify-between gap-4">
         <Button
           variant="ghost"
-          size="sm"
+          nativeButton={false}
           data-cuelume-hover
           render={<Link href={`/?lang=${locale}`} />}
         >
