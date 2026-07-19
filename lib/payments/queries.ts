@@ -80,7 +80,7 @@ export async function listPaymentEvents(paymentId: string): Promise<PaymentEvent
     .from("payment_events")
     .select("id, payment_id, from_status, to_status, reason, created_at")
     .eq("payment_id", paymentId)
-    .order("created_at", { ascending: true });
+    .order("created_at", { ascending: false });
 
   if (error || !data) return [];
 
