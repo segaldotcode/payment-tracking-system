@@ -1,0 +1,55 @@
+{
+  "title": "Système de suivi de paiements",
+  "subtitle": "Suivi du cycle de vie des paiements avec state machine, flow de remboursement et liaison de reçus.",
+  "status": {
+    "pending": "En attente",
+    "processing": "En cours",
+    "success": "Réussi",
+    "failed": "Échoué",
+    "refunded": "Remboursé"
+  },
+  "newPayment": {
+    "heading": "Nouveau paiement",
+    "personaLabel": "Persona",
+    "amountLabel": "Montant",
+    "currencyLabel": "Devise",
+    "submit": "Créer le paiement",
+    "empty": "Aucun persona trouvé. Exécute d'abord supabase/schema.sql sur ta base de données."
+  },
+  "list": {
+    "heading": "Paiements",
+    "empty": "Aucun paiement pour l'instant. Crées-en un ci-dessus.",
+    "status": "Statut",
+    "amount": "Montant",
+    "user": "Utilisateur",
+    "created": "Créé le",
+    "viewDetails": "Voir les détails"
+  },
+  "filters": {
+    "allStatuses": "Tous les statuts"
+  },
+  "detail": {
+    "back": "Retour aux paiements",
+    "timelineHeading": "Chronologie",
+    "receiptHeading": "Reçu",
+    "receiptEmpty": "Aucun reçu lié pour l'instant.",
+    "receiptReferenceLabel": "Référence",
+    "linkReceipt": "Lier un reçu",
+    "issuedOn": "Émis le {date}"
+  },
+  "actions": {
+    "markProcessing": "Passer en cours",
+    "markSucceeded": "Marquer réussi",
+    "markFailed": "Marquer échoué",
+    "refund": "Rembourser",
+    "failureReasonLabel": "Raison de l'échec",
+    "refundReasonLabel": "Raison du remboursement",
+    "refundAmountLabel": "Montant remboursé (optionnel, montant total par défaut)",
+    "confirm": "Confirmer",
+    "cancel": "Annuler"
+  },
+  "event": {
+    "created": "Paiement créé",
+    "transition": "{from} vers {to}"
+  }
+}

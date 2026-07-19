@@ -1,0 +1,55 @@
+{
+  "title": "Payment Tracking System",
+  "subtitle": "Payment lifecycle tracker with state machine, refund flow and receipt linking.",
+  "status": {
+    "pending": "Pending",
+    "processing": "Processing",
+    "success": "Success",
+    "failed": "Failed",
+    "refunded": "Refunded"
+  },
+  "newPayment": {
+    "heading": "New payment",
+    "personaLabel": "Persona",
+    "amountLabel": "Amount",
+    "currencyLabel": "Currency",
+    "submit": "Create payment",
+    "empty": "No personas found. Run supabase/schema.sql against your database first."
+  },
+  "list": {
+    "heading": "Payments",
+    "empty": "No payments yet. Create one above.",
+    "status": "Status",
+    "amount": "Amount",
+    "user": "User",
+    "created": "Created",
+    "viewDetails": "View details"
+  },
+  "filters": {
+    "allStatuses": "All statuses"
+  },
+  "detail": {
+    "back": "Back to payments",
+    "timelineHeading": "Timeline",
+    "receiptHeading": "Receipt",
+    "receiptEmpty": "No receipt linked yet.",
+    "receiptReferenceLabel": "Reference",
+    "linkReceipt": "Link receipt",
+    "issuedOn": "Issued {date}"
+  },
+  "actions": {
+    "markProcessing": "Mark processing",
+    "markSucceeded": "Mark succeeded",
+    "markFailed": "Mark failed",
+    "refund": "Refund",
+    "failureReasonLabel": "Failure reason",
+    "refundReasonLabel": "Refund reason",
+    "refundAmountLabel": "Refund amount (optional, defaults to full amount)",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  },
+  "event": {
+    "created": "Payment created",
+    "transition": "{from} to {to}"
+  }
+}
